@@ -1,4 +1,4 @@
--- 38. calculate the monthly revenue for the last 12 months. Include the month and total revenue for each month. MUST SOLVE!!!!!!!
+-- 38. calculate the monthly revenue for the last 12 months. Include the month and total revenue for each month.
 
 select datepart(year, rental_date) as rental_year, datepart(month, rental_date) as rental_month, sum(coalesce(amount, 0) + coalesce(tax, 0)) as monthly_total_revenue
 from rental 
