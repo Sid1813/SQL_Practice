@@ -1,4 +1,4 @@
-– 44. Same as above but returns all customers tied for the highest number of rentals in each month
+-- 44. Same as above but returns all customers tied for the highest number of rentals in each month
 
 with rentals_per_month_cte as (
 	select datepart(year, rental_date) as rental_year,
